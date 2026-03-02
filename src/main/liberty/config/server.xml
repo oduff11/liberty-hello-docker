@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<server description="Liberty Hello World Server">
+
+    <featureManager>
+        <feature>restfulWS-3.1</feature>
+    </featureManager>
+
+    <httpEndpoint id="defaultHttpEndpoint"
+                  host="*"
+                  httpPort="9080"
+                  httpsPort="9443" />
+
+    <webApplication location="liberty-hello.war" contextRoot="/liberty-hello" />
+
+</server>
